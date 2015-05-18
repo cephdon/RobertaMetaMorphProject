@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="2.5" ID="abe9daa7-4ceb-4b8c-add9-2fad96787119" Name="R_1210_750_0.5W_1%_Thick_Film" Version="" xmlns="avm">
+  <DomainModel xmlns:q1="eda" xsi:type="q1:EDAModel" UsesResource="id-14e66a3d-2f51-4da9-8d97-7d78c692358d" Author="" Notes="" XPosition="189" YPosition="119" Package="R_1210" Device="" Library="chipResistors" DeviceSet="RESISTOR_1210" xmlns="">
+    <Pin ID="id-36f8f4a4-5c22-4097-8156-44713aee9881" PortMap="" Notes="" XPosition="25" Definition="" YPosition="25" Name="1" EDAGate="A" EDASymbolLocationX="-5.08" EDASymbolLocationY="0" EDASymbolRotation="0" SPICEPortNumber="0" />
+    <Pin ID="id-2d6c32b3-9617-45e2-a007-a53bbf6bde8c" PortMap="" Notes="" XPosition="125" Definition="" YPosition="25" Name="2" EDAGate="A" EDASymbolLocationX="5.08" EDASymbolLocationY="0" EDASymbolRotation="R180" SPICEPortNumber="0" />
+  </DomainModel>
+  <DomainModel xmlns:q2="spice" xsi:type="q2:SPICEModel" UsesResource="id-a502b8bd-7073-4264-94e0-bb8f47c07edc" Author="" Notes="Created using SPICE Model CAT Module" XPosition="329" YPosition="315" Class="X:R_CHIP" xmlns="">
+    <Pin ID="id-0dfa1749-f622-424e-91d0-dda1afd435f2" PortMap="id-41164639-07a4-4d91-a67d-7c9d75fa2d39" Notes="" XPosition="50" Definition="" YPosition="150" Name="2" EDAGate="" EDASymbolLocationX="" EDASymbolLocationY="" EDASymbolRotation="" SPICEPortNumber="1" />
+    <Pin ID="id-fca0e53e-cd84-4908-bd1c-b25fd6c01986" PortMap="" Notes="" XPosition="50" Definition="" YPosition="50" Name="1" EDAGate="" EDASymbolLocationX="" EDASymbolLocationY="" EDASymbolRotation="" SPICEPortNumber="0" />
+    <Parameter XPosition="50" YPosition="550" Locator="Ls">
+      <Value ID="id-8defdb3a-5473-4264-b243-b9c0f4103319" Unit="H">
+        <ValueExpression xmlns:q3="avm" xsi:type="q3:DerivedValue" ValueSource="id-520d1642-dd28-4634-8f6d-5c927e58b16d" />
+      </Value>
+    </Parameter>
+    <Parameter XPosition="50" YPosition="650" Locator="Cp">
+      <Value ID="id-156f424f-f602-4488-a512-be36be0e0e78" Unit="F">
+        <ValueExpression xmlns:q4="avm" xsi:type="q4:DerivedValue" ValueSource="id-c36a6fff-dbce-4757-98af-d065466f33ba" />
+      </Value>
+    </Parameter>
+    <Parameter XPosition="50" YPosition="450" Locator="Resistance">
+      <Value ID="id-66e07d9c-95c1-4e37-a315-a190cb1aa1a9" Unit="ohm">
+        <ValueExpression xmlns:q5="avm" xsi:type="q5:DerivedValue" ValueSource="id-5b532445-5032-4c0a-86c3-d07a69a80ef8" />
+      </Value>
+    </Parameter>
+  </DomainModel>
+  <Property xmlns:q6="avm" xsi:type="q6:PrimitiveProperty" Name="octopart_mpn" OnDataSheet="false" ID="property.id-e8af007b-ef99-43bb-b074-610dcc9b8762" XPosition="364" YPosition="21" xmlns="">
+    <Value ID="id-e8af007b-ef99-43bb-b074-610dcc9b8762" DimensionType="Scalar" Dimensions="" DataType="String">
+      <ValueExpression xsi:type="q6:FixedValue">
+        <Value>ERJ-14NF7500U</Value>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q7="avm" xsi:type="q7:PrimitiveProperty" Name="Resistance" OnDataSheet="true" ID="property.id-5b532445-5032-4c0a-86c3-d07a69a80ef8" XPosition="28" YPosition="385" xmlns="">
+    <Value ID="id-5b532445-5032-4c0a-86c3-d07a69a80ef8" DimensionType="Scalar" Dimensions="" Unit="ohm" DataType="String">
+      <ValueExpression xsi:type="q7:FixedValue">
+        <Value>750</Value>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q8="avm" xsi:type="q8:PrimitiveProperty" Name="Cp" OnDataSheet="false" ID="property.id-c36a6fff-dbce-4757-98af-d065466f33ba" XPosition="28" YPosition="525" xmlns="">
+    <Value ID="id-c36a6fff-dbce-4757-98af-d065466f33ba" DimensionType="Scalar" Dimensions="" Unit="F" DataType="String">
+      <ValueExpression xsi:type="q8:FixedValue">
+        <Value>0.2e-12</Value>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q9="avm" xsi:type="q9:PrimitiveProperty" Name="Ls" OnDataSheet="false" ID="property.id-520d1642-dd28-4634-8f6d-5c927e58b16d" XPosition="28" YPosition="462" xmlns="">
+    <Value ID="id-520d1642-dd28-4634-8f6d-5c927e58b16d" DimensionType="Scalar" Dimensions="" Unit="H" DataType="String">
+      <ValueExpression xsi:type="q9:FixedValue">
+        <Value>0.73e-9</Value>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <ResourceDependency Name="Icon.png" Path="Icon.png" Hash="" ID="id-d1dcfa10-4d06-4456-9b42-450822caab1a" Notes="Custom icon for this component" XPosition="84" YPosition="28" xmlns="" />
+  <ResourceDependency Name="ecad" Path="Schematic\ecad.lbr" Hash="" ID="id-14e66a3d-2f51-4da9-8d97-7d78c692358d" Notes="Standalone EAGLE library for this device" XPosition="301" YPosition="42" xmlns="" />
+  <ResourceDependency Name="SPICEModelFile" Path="Spice\R_CHIP.cir" Hash="" ID="id-a502b8bd-7073-4264-94e0-bb8f47c07edc" Notes="Derived from 'C:\Users\Henry\repos\tonka\tonka\src\ComponentFactoryClasses\R_CHIP.cir'.&#xA;" XPosition="525" YPosition="266" xmlns="" />
+  <Connector ConnectorComposition="" ID="id-9f05f41f-cf31-45eb-a485-3ed3cf42e356" ApplyJoinData="" XPosition="483" YPosition="168" Notes="" Definition="" Name="P2" xmlns="">
+    <Role xmlns:q10="schematic" xsi:type="q10:Pin" ID="id-41164639-07a4-4d91-a67d-7c9d75fa2d39" PortMap="id-2d6c32b3-9617-45e2-a007-a53bbf6bde8c" Notes="" XPosition="77" Definition="" YPosition="63" Name="Sch" EDAGate="" EDASymbolLocationX="" EDASymbolLocationY="" EDASymbolRotation="" SPICEPortNumber="0" />
+  </Connector>
+  <Connector ConnectorComposition="" ID="id-ea339804-4fc2-40f0-84e4-05a46ee16db0" ApplyJoinData="" XPosition="35" YPosition="182" Notes="" Definition="" Name="P1" xmlns="">
+    <Role xmlns:q11="schematic" xsi:type="q11:Pin" ID="id-1564fca8-119f-4a41-aded-9f90d90ad725" PortMap="id-fca0e53e-cd84-4908-bd1c-b25fd6c01986 id-36f8f4a4-5c22-4097-8156-44713aee9881" Notes="" XPosition="350" Definition="" YPosition="203" Name="Sch" EDAGate="" EDASymbolLocationX="" EDASymbolLocationY="" EDASymbolRotation="" SPICEPortNumber="0" />
+  </Connector>
+  <Classifications xmlns="">passive_components.resistors.single_components</Classifications>
+</Component>
